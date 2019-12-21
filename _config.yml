@@ -6,7 +6,7 @@ keywords: "Margaret Ruth, Yoga, Qi Gong, qigong, New York"
 email: "margaretcrft@gmail.com"
 
 # Site config
-baseurl: ""
+baseurl: "/pineapple"
 highlighter: rouge
 sass:
   sass_dir: assets/scss
