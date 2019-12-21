@@ -11,16 +11,16 @@
 </head>
 <body>
 	{% include header.html %}
-	<main class="content">
+	<main class="content short">
 		<section class="intro">
 			<div class="container">
 				<h2>About me.</h2>
-				<p>{{ site.description }}</p>
+				<p>Hi I'm Margaret! I'm a great yoga teacher in New York City and have lots of wisdom to share.</p>
 			</div>
 		</section>
 		<section class="projects">
 			<div class="container">
-				<h2>Projects I have worked on.</h2>
+				<h2>This is what I teach.</h2>
 				<ul class="projects-list">
 					{% for item in site.categories.projects reversed %}
 						<li>
@@ -36,6 +36,12 @@
 				</ul>
 			</div>
 		</section>
+    <section class="more">
+			<div class="container">
+			<h2>My mission.</h2>
+      <p>Hi I'm Margaret! I'm a great yoga teacher in New York City and have lots of wisdom to share. Hi I'm Margaret! I'm a great yoga teacher in New York City and have lots of wisdom to share.</p>
+      </div>
+    </section>
 	</main>
 	{% include footer.html %}
 	<script src="{{ "/assets/scripts/vendor/scrollreveal.min.js" | prepend: site.baseurl }}"></script>
