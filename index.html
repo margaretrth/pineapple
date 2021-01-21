@@ -12,51 +12,17 @@
 <body>
 	{% include header.html %}
 	<main class="content short">
-		<section class="intro">
-			<div class="container">
-				<h2>About me.</h2>
-				<p>Hi I'm Margaret! I teach yoga and qi gong in New York City.</p>
-			</div>
-		</section>
 		<section class="projects">
 			<div class="container">
-				<h2>This is what I teach.</h2>
 				<ul class="projects-list">
-					{% for item in site.categories.projects reversed %}
 						<li>
-							<a href="{{ item.url | prepend: site.baseurl }}">
 								<div class="img-wrapper">
-									<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+									<img src="{{ '/photos/resized/home page - qi gong.jpeg' | prepend: site.baseurl }}" alt="Margaret practicing bear pose" />
 								</div>
-								<span class="h2">{{ item.project.type }}</span>
-								<h3>{{ item.project.title }}</h3>
-							</a>
 						</li>
-					{% endfor %}
 				</ul>
 			</div>
 		</section>
-    <section class="more">
-
-			<div class="container">
-			<h2>My background.</h2>
-      <p>I teach yoga and qi gong because I care about people. In a world that puts profit over human lives and our planet earth, I believe caring for ourselves and for each other is where the mundane meets the sacred.<br />
-<br />
-         I started practicing yoga in 2012 shortly after I moved to New York. As I passed through the worlds of academia, children’s books, education, and nonprofits, my practice rooted and oriented me. When my grandmother got sick in 2017, I quit everything else and committed myself to what mattered the most: my family, my practice, and my community.<br />
-<br />
-The more I explore embodiment — what it means and how it feels — the more my life transforms. No, I'm not significantly more flexible or less anxious. But I am much stronger than I used to be. I am more engaged and connected. I am more myself. While I can’t promise this work will be transformative for you, I do hope you will explore its potential with me.<br />
-      <br />
-	     
-	    
-	    <br />
-
-
-			 
-			 <br />
-<br />
-</div>
-
-    </section>
 	</main>
 	{% include footer.html %}
 	<script src="{{ "/assets/scripts/vendor/scrollreveal.min.js" | prepend: site.baseurl }}"></script>
