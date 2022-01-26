@@ -10,6 +10,7 @@
 	{% include head.html %}
 </head>
 <body>
+	<div data-nosnippet>
 	{% include header.html %}
 	<main class="content short">
 		<section class="projects">
@@ -27,5 +28,6 @@
 	{% include footer.html %}
 	<script src="{{ "/assets/scripts/vendor/scrollreveal.min.js" | prepend: site.baseurl }}"></script>
 	<script src="{{ "/assets/scripts/home.js" | prepend: site.baseurl }}"></script>
+	</div>
 </body>
 </html>
